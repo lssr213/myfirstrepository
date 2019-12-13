@@ -1,0 +1,76 @@
+INFO  [main]:14 Nov 2019 00:36:24,090 AllAPISteps.java(36)  - -----------------Before Hook of AllAPISteps-----------------
+INFO  [main]:14 Nov 2019 00:36:24,094 PropertiesReaderUtil.java(18)  - Reading properties from properties file into system properties
+INFO  [main]:14 Nov 2019 00:36:24,096 AllAPISteps.java(50)  - I have Get URI
+INFO  [main]:14 Nov 2019 00:36:24,096 AllAPISteps.java(52)  - http://hotel-test.equalexperts.io/booking/
+INFO  [main]:14 Nov 2019 00:36:24,096 AllAPISteps.java(58)  - I make a Get call
+INFO  [main]:14 Nov 2019 00:36:26,039 AllAPISteps.java(65)  - Response should have 200 status code
+INFO  [main]:14 Nov 2019 00:36:26,041 AllAPISteps.java(67)  - actualResponseCode :200
+INFO  [main]:14 Nov 2019 00:36:26,041 AllAPISteps.java(68)  - expectedResponseCode 200
+INFO  [main]:14 Nov 2019 00:36:26,044 AllAPISteps.java(75)  - Respose should be of Json type
+INFO  [main]:14 Nov 2019 00:36:26,045 AllAPISteps.java(76)  - application/json; charset=utf-8
+INFO  [main]:14 Nov 2019 00:36:26,045 AllAPISteps.java(77)  - application/json
+INFO  [main]:14 Nov 2019 00:36:26,045 AllAPISteps.java(88)  - I should get all bookins present in the system
+INFO  [main]:14 Nov 2019 00:36:26,099 AllAPISteps.java(90)  - [{"bookingid":1890},{"bookingid":1891},{"bookingid":1892},{"bookingid":1896},{"bookingid":1897},{"bookingid":1898}]
+INFO  [main]:14 Nov 2019 00:36:26,726 AllAPISteps.java(99)  - Bookings Count :6
+INFO  [main]:14 Nov 2019 00:36:26,726 AllAPISteps.java(44)  - -----------------After Hook of AllAPISteps-----------------
+INFO  [main]:14 Nov 2019 00:36:26,733 AllAPISteps.java(36)  - -----------------Before Hook of AllAPISteps-----------------
+INFO  [main]:14 Nov 2019 00:36:26,735 AllAPISteps.java(112)  - I have POST URI
+INFO  [main]:14 Nov 2019 00:36:26,735 AllAPISteps.java(114)  - http://hotel-test.equalexperts.io/booking/
+INFO  [main]:14 Nov 2019 00:36:26,736 AllAPISteps.java(122)  - I have booking data in the jsonfile :conf/testdata/newbooking.json
+INFO  [main]:14 Nov 2019 00:36:26,737 AllAPISteps.java(130)  - I make a post request with the json file
+INFO  [main]:14 Nov 2019 00:36:26,850 AllAPISteps.java(65)  - Response should have 200 status code
+INFO  [main]:14 Nov 2019 00:36:26,851 AllAPISteps.java(67)  - actualResponseCode :200
+INFO  [main]:14 Nov 2019 00:36:26,851 AllAPISteps.java(68)  - expectedResponseCode 200
+INFO  [main]:14 Nov 2019 00:36:26,852 AllAPISteps.java(75)  - Respose should be of Json type
+INFO  [main]:14 Nov 2019 00:36:26,852 AllAPISteps.java(76)  - application/json; charset=utf-8
+INFO  [main]:14 Nov 2019 00:36:26,853 AllAPISteps.java(77)  - application/json
+INFO  [main]:14 Nov 2019 00:36:26,853 AllAPISteps.java(139)  - New Booking should get created successfully
+INFO  [main]:14 Nov 2019 00:36:26,854 AllAPISteps.java(141)  - {"bookingid":1899,"booking":{"firstname":"fnameapi1","lastname":"snameapi11","totalprice":23,"depositpaid":false,"bookingdates":{"checkin":"2019-11-22","checkout":"2019-11-23"}}}
+INFO  [main]:14 Nov 2019 00:36:26,854 AllAPISteps.java(44)  - -----------------After Hook of AllAPISteps-----------------
+INFO  [main]:14 Nov 2019 00:36:26,857 AllWebDriverSteps.java(49)  - -----------------Before Hook of AllWebDriverSteps---------------------------
+INFO  [main]:14 Nov 2019 00:36:26,861 WebDriverFactory.java(38)  - Browser :CHROME
+INFO  [main]:14 Nov 2019 00:36:37,196 AllWebDriverSteps.java(67)  - User is on booking page
+INFO  [main]:14 Nov 2019 00:36:40,840 AllWebDriverSteps.java(74)  - Count Before Booking/Deletion :7
+INFO  [main]:14 Nov 2019 00:36:40,841 AllWebDriverSteps.java(81)  - User enters fcname22  in firstname field
+INFO  [main]:14 Nov 2019 00:36:41,122 AllWebDriverSteps.java(88)  - User enters scname2  in surname field
+INFO  [main]:14 Nov 2019 00:36:41,351 AllWebDriverSteps.java(95)  - User enters 12.5  in Price field
+INFO  [main]:14 Nov 2019 00:36:41,539 AllWebDriverSteps.java(102)  - User selects false  in deposit field
+INFO  [main]:14 Nov 2019 00:36:41,771 AllWebDriverSteps.java(109)  - User enters 2019-10-28  in checkin field
+INFO  [main]:14 Nov 2019 00:36:42,103 AllWebDriverSteps.java(116)  - User enters 2019-10-29  in checkout field
+INFO  [main]:14 Nov 2019 00:36:42,432 AllWebDriverSteps.java(123)  - User clicks save button
+INFO  [main]:14 Nov 2019 00:36:47,621 AllWebDriverSteps.java(133)  - User clicks save button
+INFO  [main]:14 Nov 2019 00:36:47,641 AllWebDriverSteps.java(135)  - After Booking :8
+INFO  [main]:14 Nov 2019 00:36:47,642 AllWebDriverSteps.java(136)  - After Booking :8
+INFO  [main]:14 Nov 2019 00:36:47,642 AllWebDriverSteps.java(59)  - -----------------After Hook of AllWebDriverSteps------------------------------
+INFO  [main]:14 Nov 2019 00:36:48,296 AllWebDriverSteps.java(49)  - -----------------Before Hook of AllWebDriverSteps---------------------------
+INFO  [main]:14 Nov 2019 00:36:48,297 WebDriverFactory.java(38)  - Browser :CHROME
+INFO  [main]:14 Nov 2019 00:36:57,601 AllWebDriverSteps.java(180)  - booking data is presnt in the row :1
+INFO  [main]:14 Nov 2019 00:36:57,601 AllWebDriverSteps.java(181)  - Row Number :1
+INFO  [main]:14 Nov 2019 00:36:58,474 ExcelUtils.java(45)  - Fname1 : 
+INFO  [main]:14 Nov 2019 00:36:58,474 ExcelUtils.java(46)  - Sname1 : 
+INFO  [main]:14 Nov 2019 00:36:58,475 ExcelUtils.java(47)  - 12.34 : 
+INFO  [main]:14 Nov 2019 00:36:58,475 ExcelUtils.java(48)  - true : 
+INFO  [main]:14 Nov 2019 00:36:58,475 ExcelUtils.java(49)  - 2019-11-15 : 
+INFO  [main]:14 Nov 2019 00:36:58,476 ExcelUtils.java(50)  - 2019-11-16 : 
+INFO  [main]:14 Nov 2019 00:36:58,476 ExcelUtils.java(51)  - CREATE : 
+INFO  [main]:14 Nov 2019 00:36:58,565 AllWebDriverSteps.java(67)  - User is on booking page
+INFO  [main]:14 Nov 2019 00:37:01,942 AllWebDriverSteps.java(74)  - Count Before Booking/Deletion :8
+INFO  [main]:14 Nov 2019 00:37:01,943 AllWebDriverSteps.java(189)  - User enters data into fields
+INFO  [main]:14 Nov 2019 00:37:03,041 AllWebDriverSteps.java(123)  - User clicks save button
+INFO  [main]:14 Nov 2019 00:37:08,140 AllWebDriverSteps.java(205)  - Booking creation status should be as expected
+INFO  [main]:14 Nov 2019 00:37:08,153 AllWebDriverSteps.java(207)  - After Booking :9
+INFO  [main]:14 Nov 2019 00:37:08,153 AllWebDriverSteps.java(208)  - After Booking :9
+INFO  [main]:14 Nov 2019 00:37:08,153 AllWebDriverSteps.java(211)  - User Created
+INFO  [main]:14 Nov 2019 00:37:08,154 AllWebDriverSteps.java(59)  - -----------------After Hook of AllWebDriverSteps------------------------------
+INFO  [main]:14 Nov 2019 00:37:08,824 AllWebDriverSteps.java(49)  - -----------------Before Hook of AllWebDriverSteps---------------------------
+INFO  [main]:14 Nov 2019 00:37:08,825 WebDriverFactory.java(38)  - Browser :CHROME
+INFO  [main]:14 Nov 2019 00:37:18,180 AllWebDriverSteps.java(67)  - User is on booking page
+INFO  [main]:14 Nov 2019 00:37:21,612 AllWebDriverSteps.java(74)  - Count Before Booking/Deletion :9
+INFO  [main]:14 Nov 2019 00:37:21,613 AllWebDriverSteps.java(147)  - There is atleast one booking in bookings page
+INFO  [main]:14 Nov 2019 00:37:21,647 AllWebDriverSteps.java(149)  - Bookings Count Before Deletion :9
+INFO  [main]:14 Nov 2019 00:37:21,647 AllWebDriverSteps.java(150)  - Bookings Count Before Deletion :9
+INFO  [main]:14 Nov 2019 00:37:21,648 AllWebDriverSteps.java(157)  - User clicks delete button of the booking present at the top
+INFO  [main]:14 Nov 2019 00:37:24,999 AllWebDriverSteps.java(167)  - User should get deleated
+INFO  [main]:14 Nov 2019 00:37:25,011 AllWebDriverSteps.java(169)  - Total Bookings After Deletion = 8
+INFO  [main]:14 Nov 2019 00:37:25,012 AllWebDriverSteps.java(170)  - Total Bookings After Deletion = 8
+INFO  [main]:14 Nov 2019 00:37:25,012 AllWebDriverSteps.java(59)  - -----------------After Hook of AllWebDriverSteps------------------------------
